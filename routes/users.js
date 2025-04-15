@@ -8,5 +8,5 @@ router.get('/userslist', function (req, res, next) {
   res.render('usersList', { title: 'Liste des utilisateurs', users:
   result });
   });
-});
+}); // ce que renvoient le navigateur
 module.exports = router;

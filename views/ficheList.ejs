@@ -5,22 +5,22 @@
     <table border>
     <thead>
     <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Email</th>
+    <th>id_fiche</th>
+    <th>intitulé</th>
+    <th>statut</th>
     </tr>
     </thead>
     <tbody>
-    <% users.forEach((user)=> { %>
+    <% fiche.forEach((fiche)=> { %>
     <tr>
     <td>
-    <%= user.prénom %>
+    <%= fiche.id_fiche %>
     </td>
     <td>
-    <%= user.nom %>
+    <%= fiche.intitulé %>
     </td>
     <td>
-    <%= user.mail %>
+    <%= fiche.statut %>
     </td>
     </tr>
     <% }) %></tbody>

@@ -1,0 +1,28 @@
+<body>
+    <h1>
+    <%= title %>
+    </h1>
+    <table border>
+    <thead>
+    <tr>
+    <th>id_siren</th>
+    <th>nom</th>
+    <th>type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% organisation.forEach((organisation)=> { %>
+    <tr>
+    <td>
+    <%= organisation.id_siren %>
+    </td>
+    <td>
+    <%= organisation.nom%>
+    </td>
+    <td>
+    <%= organisation.type%>
+    </td>
+    </tr>
+    <% }) %></tbody>
+  </table>
+  </body>
