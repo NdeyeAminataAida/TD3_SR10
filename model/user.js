@@ -4,13 +4,13 @@ module.exports = {
     db.query("select * from Utilisateur where mail= ?",[mail], function
     (err, results) {
     if (err) throw err;
-    callback(results);
+        callback(results);
     });
     },
     readall: function (callback) {
     db.query("select * from Utilisateur", function (err, results) {
     if (err) throw err;
-    callback(results);
+        callback(results);
     });
     },
     areValid: function (mail, password, callback) {
@@ -26,7 +26,7 @@ module.exports = {
     },
     create: function (mail, nom, prenom, pwd, type, callback) {
     //todo
-        sql = "Insert into 'Utilisateur' Values ('aminataaida08@gmail.com','Faye','Aminata','natyna12@','candidat')";
+        sql = "Insert into Utilisateur(mail, nom, prenom, pwd, type) Values (?,?,?,?,?)";
         db.query(sql, mail, function (err, results) {
             if (err) throw err;{
                 callback(true)
