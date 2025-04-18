@@ -1,11 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var candidaterModel = require('../model/candidater')
+var candidaterModel = require('../model/candidature');
+const candidature = require('../model/candidature');
 
 /* GET home page. */
-router.get('/candidaterlist', function (req, res, next) {
+router.get('/candidaturelist', function (req, res, next) {
   result=candidaterModel.readall(function(result){
-  res.render('candidaterList', { title: 'Liste des candidatures',candidater:
+  res.render('candidatureList', { title: 'Liste des candidatures',candidature:
   result });
   });
 }); // ce que renvoient le navigateur

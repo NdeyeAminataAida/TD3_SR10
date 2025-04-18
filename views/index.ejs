@@ -1,11 +1,38 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+  <title><%= title %></title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    a.button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bienvenue sur Recr’UT !</h1>
+  <p>Choisissez une action :</p>
+
+  <a class="button" href="/users/userslist">Voir les utilisateurs</a>
+  <a class="button" href="/offres/offreslist">Voir les offres</a>
+  <a class="button" href="/fiche/fichelist">Voir les fiches</a>
+  <a class="button" href="/organisation/organisationlist">Voir les organisations</a>
+  <a class="button" href="/candidature/candidaturelist">Candidature</a>
+
+</body>
 </html>

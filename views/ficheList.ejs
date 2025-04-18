@@ -1,28 +1,35 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel='stylesheet' href='/stylesheets/style.css' />
 <body>
     <h1>
-    <%= title %>
+        <h1 class="text-primary"><%= title %></h1>
     </h1>
-    <table border>
-    <thead>
-    <tr>
-    <th>id_fiche</th>
-    <th>intitulé</th>
-    <th>statut</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% fiche.forEach((fiche)=> { %>
-    <tr>
-    <td>
-    <%= fiche.id_fiche %>
-    </td>
-    <td>
-    <%= fiche.intitulé %>
-    </td>
-    <td>
-    <%= fiche.statut %>
-    </td>
-    </tr>
-    <% }) %></tbody>
-</table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id_fiche</th>
+                <th>intitulé</th>
+                <th>statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% fiche.forEach((fiche) => { %>
+                <tr>
+                    <td><%= fiche.id_fiche %></td>
+                    <td><%= fiche.intitulé %></td>
+                    <td>
+                        <!-- Appliquer une classe de couleur basée sur le statut -->
+                        <span class="etat 
+                            <% if(fiche.statut === 'Cadre') { %>cadre<% } %>
+                            <% if(fiche.statut === 'ETAM') { %>etam<% } %>
+                            <% if(fiche.statut === 'Stagiaire') { %>stagiaire<% } %>
+                            <% if(fiche.statut === 'Alternant') { %>alternant<% } %>
+                            <% if(fiche.statut === 'Assistant-Boulanger') { %>assistant_boulanger<% } %>">
+                            <%= fiche.statut %>
+                        </span>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
 </body>

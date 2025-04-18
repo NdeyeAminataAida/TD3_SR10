@@ -7,24 +7,20 @@
     <table class= 'table'>
     <thead>
     <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Email</th>
+    <th>num_offre</th>
+    <th>email_candidat</th>
     </tr>
     </thead>
     <tbody>
-    <% users.forEach((user)=> { %>
+    <% candidature.forEach((candidature)=> { %>
     <tr>
     <td>
-    <%= user.prénom %>
+    <%= candidature.num_offre %>
     </td>
     <td>
-    <%= user.nom %>
-    </td>
-    <td>
-    <%= user.mail %>
+    <%= candidature.email_candidat %>
     </td>
     </tr>
     <% }) %></tbody>
-</table>
-</body>
+  </table>
+  </body>

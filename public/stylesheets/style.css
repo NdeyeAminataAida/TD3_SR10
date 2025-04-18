@@ -1,8 +1,89 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.etat {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
 }
 
-a {
-  color: #00B7FF;
+.a-traiter {
+  background-color: #fdf2b2;
+  color: #6c6400;
 }
+
+.valide {
+  background-color: #daf5cd;
+  color: #2e6b00;
+}
+
+.rejete {
+  background-color: #f5b2b2;
+  color: #850000;
+}
+
+/* Style du bouton "Consulter" */
+.btn-consulter {
+  background-color: #2F5597;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn-consulter:hover {
+  background-color: #244172; /* Bleu foncé au survol */
+}
+/* Style pour les colonnes : numéro, état et date_validité */
+.blue-column {
+  color: blue;
+}
+ /* Styles de couleur selon le statut */
+ .cadre {
+  background-color: #3677b2; /* Couleur bleu plus foncée */
+  color: #0a3a5c; /* Texte bleu foncé */
+}
+.etam {
+  background-color: #b7e0b3; /* Vert plus foncé */
+  color: #4d3c2b; /* Texte brun plus foncé */
+}
+.stagiaire {
+  background-color: #f5c0c0; /* Rose plus foncé */
+  color: #b24c4c; /* Texte rouge foncé */
+}
+.alternant {
+  background-color: #d0d4e1; /* Gris plus foncé */
+  color: #4f5c5f; /* Texte gris foncé */
+}
+.assistant_boulanger {
+  background-color: #b3b8b8; /* Gris plus foncé */
+  color: #404545; /* Texte gris foncé */
+}
+
+    .societe-nationale {
+        background-color: #3677b2; /* Bleu plus foncé */
+        color: #0a3a5c; /* Texte bleu foncé */
+    }
+    .esn {
+        background-color: #b7e0b3; /* Vert plus foncé */
+        color: #4d3c2b; /* Texte brun foncé */
+    }
+    .grande-entreprise {
+        background-color: #f5c0c0; /* Rose plus foncé */
+        color: #b24c4c; /* Texte rouge foncé */
+    }
+    .sarl {
+        background-color: #d0d4e1; /* Gris-bleu plus foncé */
+        color: #4f5c5f; /* Texte gris foncé */
+    }
+    .scop {
+        background-color: #b3b8b8; /* Gris plus foncé */
+        color: #404545; /* Texte gris foncé */
+    }
+    .eurl {
+        background-color: #b3b8b8; /* Même gris que SCOP */
+        color: #404545;
+    }
+    .sasu {
+        background-color: #d0d4e1; /* Même que SARL pour cohérence */
+        color: #4f5c5f;
+    }
