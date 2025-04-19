@@ -4,7 +4,7 @@ var candidaterModel = require('../model/candidature');
 const candidature = require('../model/candidature');
 
 /* GET home page. */
-router.get('/candidaturelist', function (req, res, next) {
+router.get('/candidatureList', function (req, res, next) {
   result=candidaterModel.readall(function(result){
   res.render('candidatureList', { title: 'Liste des candidatures',candidature:
   result });
